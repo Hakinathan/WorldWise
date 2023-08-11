@@ -1,0 +1,10 @@
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .active class is given by react router (NavLink) and for custom styling we use global keyword */
+.nav :global(.active) {
+  background-color: green;
+}
