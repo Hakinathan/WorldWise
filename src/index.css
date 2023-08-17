@@ -69,6 +69,8 @@ input:focus {
 }
 
 /*
+CSS module snippet
+
 "importCSSModule": {
     "prefix": "csm",
     "scope": "javascript,typescript,javascriptreact",
