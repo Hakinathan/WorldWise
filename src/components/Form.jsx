@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 import styles from "./Form.module.css";
 import Button from "./Button";
+import BackButton from "./BackButton";
 
 export function convertToEmoji(countryCode) {
   const codePoints = countryCode
@@ -53,17 +54,7 @@ function Form() {
 
       <div className={styles.buttons}>
         <Button type="primary">Add</Button>
-        <Button
-          type="back"
-          onClick={(e) => {
-            // preventDefault() prevents the default behavior of the event from occurring
-            e.preventDefault();
-            // navigate(-1) is the same as clicking the back button in the browser window (or pressing the back button on the keyboard)
-            navigate(-1);
-          }}
-        >
-          &larr; Back
-        </Button>
+        <BackButton />
       </div>
     </form>
   );
